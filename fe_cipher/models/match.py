@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import fe_cipher
 
+class Match:
+    pass
