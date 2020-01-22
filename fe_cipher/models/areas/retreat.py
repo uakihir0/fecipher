@@ -15,5 +15,7 @@ class Retreat:
 
     # カードを退避から除外
     def remove_card(self, card: Card) -> Card:
-        self.cards.remove(card)
-        return card
+        if card in self.cards:
+            self.cards.remove(card)
+            return card
+        raise Exception

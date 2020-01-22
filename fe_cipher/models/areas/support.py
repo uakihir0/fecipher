@@ -3,8 +3,8 @@ from typing import Union
 from fe_cipher.models.card import Card
 
 
-# 退避
-class Retreat:
+# 支援
+class Support:
     card: Union[Card, None] = None
 
     def __init__(self):

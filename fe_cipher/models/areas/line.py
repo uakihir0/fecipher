@@ -20,5 +20,7 @@ class Line:
 
     # ユニットを除外
     def remove_unit(self, unit: Unit) -> Unit:
-        self.units.remove(unit)
-        return unit
+        if unit in self.units:
+            self.units.remove(unit)
+            return unit
+        raise Exception
